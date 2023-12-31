@@ -16,6 +16,8 @@ const pool = new Pool({
     connectionString : process.env.DATABASE_URL
 });
 
+app.use(express.static("public"));
+
 app.post('/login', async (req, res, next) =>{
     const {username, password} = req.body
     
