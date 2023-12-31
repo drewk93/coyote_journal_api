@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "driver": "CockroachDB",
+            "name": "coyote_journal_external_database",
+            "connectString": "postgres://coyote_journal_database_user:H7Jssa4TWU0MzG85FrtRr4fKsLiqVP6B@dpg-cm8ek4gcmk4c7391l170-a.oregon-postgres.render.com/coyote_journal_database"
+        }
+    ]
+}
