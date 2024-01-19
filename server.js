@@ -29,7 +29,7 @@ app.post('/login', async (req, res, next) =>{
 
             if (isPasswordValid){
                 console.log('Login Successful')
-                res.status(200).json({ message: 'Login Successful', user_id: user.user_id });
+                res.status(200).json({ message: 'Login Successful', user_id: user.user_id, username: user.username });
             } else {
                 console.log('Authentication Failed')
                 res.status(401).json({message: 'Authentication Failed'})
